@@ -1,0 +1,12 @@
+Urea|Nitrogen deficiency|1100
+DAP|Phosphorus deficiency|650
+MOP|Potassium deficiency|700
+SSP|Phosphorus and Sulphur deficiency|400
+Ammonium Sulphate|Nitrogen and Sulphur deficiency|350
+Zinc Sulphate|Zinc micronutrient deficiency|200
+Calcium Nitrate|Calcium and Nitrogen deficiency|320
+Magnesium Sulphate|Magnesium deficiency|180
+Potassium Sulphate|Potassium and Sulphur deficiency|450
+Boron Fertilizer|Boron micronutrient deficiency|120
+Ferrous Sulphate|Iron deficiency|150
+Ammonium Phosphate|Nitrogen and Phosphorus deficiency|300

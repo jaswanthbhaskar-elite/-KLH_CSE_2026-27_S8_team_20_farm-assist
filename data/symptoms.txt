@@ -1,0 +1,27 @@
+yellow spots|Leaf Blight
+curling leaves|Aphids
+white powder|Powdery Mildew
+brown patches|Leaf Spot
+wilting|Root Rot
+root decay|Root Rot
+sudden wilting|Bacterial Wilt
+orange pustules|Rust Fungus
+yellow patches|Downy Mildew
+fuzzy growth|Downy Mildew
+dark rings|Early Blight
+water soaked lesions|Late Blight
+yellowing leaves|Fusarium Wilt
+vascular browning|Fusarium Wilt
+sunken lesions|Anthracnose
+brown circular spots|Leaf Spot
+holes in stem|Stem Borer
+white insects|Whitefly Infestation
+mottled leaves|Mosaic Virus
+black spore masses|Smut Fungus
+diamond lesions|Blast Disease
+soil stem rot|Collar Rot
+corky lesions|Scab Disease
+stunted growth|Nematode Infestation
+root galls|Nematode Infestation
+sooty coating|Sooty Mould
+reddish stem|Red Rot

@@ -1,0 +1,72 @@
+Crop|పంట
+Disease|వ్యాధి
+Fertilizer|ఎరువు
+Search|శోధన
+Recommendation|సిఫార్సు
+Allocation|కేటాయింపు
+Symptoms|లక్షణాలు
+Identify Disease|వ్యాధిని గుర్తించండి
+Select Image|చిత్రాన్ని ఎంచుకోండి
+Results|ఫలితాలు
+Available Land|అందుబాటులో ఉన్న భూమి
+Budget|బడ్జెట్
+Water|నీరు
+Expected Profit|అంచనా లాభం
+Exit|నిష్క్రమించు
+Treatment|చికిత్స
+Crop Information|పంట సమాచారం
+Disease Information|వ్యాధి సమాచారం
+Fertilizer Information|ఎరువు సమాచారం
+Crop Recommendation|పంట సిఫార్సు
+Fertilizer Allocation|ఎరువు కేటాయింపు
+Search by Multiple Symptoms|అనేక లక్షణాల ద్వారా శోధన
+Identify Disease from Photo|ఫోటో నుండి వ్యాధిని గుర్తించండి
+Language|భాష
+Dashboard|డాష్‌బోర్డ్
+Enter search query|శోధన పదాన్ని నమోదు చేయండి
+Enter symptoms|లక్షణాలను నమోదు చేయండి
+No matching crops found|సరిపోలే పంటలు కనుగొనబడలేదు
+No matching diseases found|సరిపోలే వ్యాధులు కనుగొనబడలేదు
+No matching fertilizers found|సరిపోలే ఎరువులు కనుగొనబడలేదు
+Selected Crops|ఎంచుకున్న పంటలు
+Total Land|మొత్తం భూమి
+Total Budget|మొత్తం బడ్జెట్
+Total Water|మొత్తం నీరు
+Total Allocated|మొత్తం కేటాయించబడింది
+Unmet Demand|తీరని డిమాండ్
+All demands satisfied|అన్ని డిమాండ్లు తీర్చబడ్డాయి
+Matched Symptoms|సరిపోలిన లక్షణాలు
+Possible Diseases|సాధ్యమయ్యే వ్యాధులు
+About|గురించి
+Home|హోమ్
+Welcome, Farmer!|స్వాగతం, రైతు!
+Back|వెనుకకు
+Submit|సమర్పించండి
+Soil|నేల
+Season|సీజన్
+Supply|సరఫరా
+Choose Image|చిత్రాన్ని ఎంచుకోండి
+No image selected|చిత్రం ఎంచుకోబడలేదు
+Predicted Disease|అంచనా వేయబడిన వ్యాధి
+Feature unavailable|ఫీచర్ అందుబాటులో లేదు
+Welcome to Farm Assist|ఫార్మ్ అసిస్ట్‌కు స్వాగతం
+Your intelligent companion for smarter farming decisions.|మీ తెలివైన వ్యవసాయ నిర్ణయాల కోసం మీ తెలివైన సహచరుడు.
+What would you like to do today?|ఈరోజు మీరు ఏమి చేయాలనుకుంటున్నారు?
+Explore detailed information about various crops.|వివిధ పంటల గురించి వివరణాత్మక సమాచారాన్ని అన్వేషించండి.
+Learn about crop diseases, symptoms and management.|పంట వ్యాధులు, లక్షణాలు మరియు నిర్వహణ గురించి తెలుసుకోండి.
+Get information on fertilizers and their proper usage.|ఎరువులు మరియు వాటి సరైన వినియోగంపై సమాచారం పొందండి.
+Search diseases by symptoms and get best suggestions.|లక్షణాల ద్వారా వ్యాధులను శోధించి ఉత్తమ సూచనలు పొందండి.
+Get the best crop recommendation for your land, budget and water.|మీ భూమి, బడ్జెట్ మరియు నీటికి తగిన ఉత్తమ పంట సిఫార్సు పొందండి.
+Optimize fertilizer allocation for better yield.|మెరుగైన దిగుబడి కోసం ఎరువుల కేటాయింపును ఆప్టిమైజ్ చేయండి.
+Identify diseases from a crop leaf photo.|పంట ఆకు ఫోటో నుండి వ్యాధులను గుర్తించండి.
+Know more about Farm Assist and how it works.|ఫార్మ్ అసిస్ట్ మరియు అది ఎలా పనిచేస్తుందో మరింత తెలుసుకోండి.
+Confidence|విశ్వసనీయత
+Detecting...|గుర్తిస్తోంది...
+Explore crop details and growing conditions.|పంట వివరాలు మరియు సాగు పరిస్థితులను అన్వేషించండి.
+Learn symptoms and treatment for crop diseases.|పంట వ్యాధుల లక్షణాలు మరియు చికిత్స తెలుసుకోండి.
+Check fertilizer types and proper usage.|ఎరువుల రకాలు మరియు సరైన వినియోగాన్ని తనిఖీ చేయండి.
+Search multiple symptoms for likely diseases.|అనేక లక్షణాల ద్వారా వ్యాధులను శోధించండి.
+Get the best crop mix for your land and budget.|మీ భూమి మరియు బడ్జెట్‌కు తగిన ఉత్తమ పంట కలయికను పొందండి.
+Optimize fertilizer supply across your crops.|మీ పంటలలో ఎరువుల సరఫరాను ఆప్టిమైజ్ చేయండి.
+Identify diseases from a leaf photo instantly.|ఆకు ఫోటో నుండి వెంటనే వ్యాధులను గుర్తించండి.
+Learn how Farm Assist works.|ఫార్మ్ అసిస్ట్ ఎలా పనిచేస్తుందో తెలుసుకోండి.

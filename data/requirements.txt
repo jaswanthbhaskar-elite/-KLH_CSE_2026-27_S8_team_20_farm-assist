@@ -1,0 +1,40 @@
+Rice|Urea|150
+Rice|DAP|50
+Maize|Urea|100
+Maize|MOP|60
+Wheat|DAP|120
+Wheat|MOP|80
+Cotton|Urea|200
+Cotton|SSP|90
+Groundnut|MOP|90
+Groundnut|Zinc Sulphate|30
+Sugarcane|Urea|250
+Sugarcane|Potassium Sulphate|150
+Barley|DAP|80
+Barley|Ammonium Sulphate|60
+Soybean|SSP|100
+Soybean|Boron Fertilizer|20
+Mustard|Ammonium Sulphate|70
+Mustard|Boron Fertilizer|15
+Chickpea|DAP|70
+Chickpea|Zinc Sulphate|25
+Sunflower|Potassium Sulphate|90
+Sunflower|Magnesium Sulphate|40
+Jute|Urea|130
+Jute|MOP|70
+Millet|Ammonium Phosphate|60
+Sorghum|Ammonium Phosphate|55
+Potato|Calcium Nitrate|100
+Potato|MOP|80
+Onion|Calcium Nitrate|90
+Onion|SSP|60
+Tomato|Calcium Nitrate|110
+Tomato|Ferrous Sulphate|30
+Banana|Urea|220
+Banana|Potassium Sulphate|180
+Turmeric|MOP|100
+Turmeric|Ferrous Sulphate|40
+Watermelon|Ammonium Phosphate|70
+Peanut|Zinc Sulphate|35
+Peanut|Boron Fertilizer|20
+Sesame|Magnesium Sulphate|35
