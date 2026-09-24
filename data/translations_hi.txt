@@ -1,0 +1,72 @@
+Crop|फसल
+Disease|रोग
+Fertilizer|उर्वरक
+Search|खोज
+Recommendation|सिफारिश
+Allocation|आवंटन
+Symptoms|लक्षण
+Identify Disease|रोग की पहचान करें
+Select Image|छवि चुनें
+Results|परिणाम
+Available Land|उपलब्ध भूमि
+Budget|बजट
+Water|पानी
+Expected Profit|अपेक्षित लाभ
+Exit|बाहर निकलें
+Treatment|उपचार
+Crop Information|फसल जानकारी
+Disease Information|रोग जानकारी
+Fertilizer Information|उर्वरक जानकारी
+Crop Recommendation|फसल सिफारिश
+Fertilizer Allocation|उर्वरक आवंटन
+Search by Multiple Symptoms|कई लक्षणों से खोजें
+Identify Disease from Photo|फोटो से रोग की पहचान करें
+Language|भाषा
+Dashboard|डैशबोर्ड
+Enter search query|खोज शब्द दर्ज करें
+Enter symptoms|लक्षण दर्ज करें
+No matching crops found|कोई मिलती-जुलती फसल नहीं मिली
+No matching diseases found|कोई मिलता-जुलता रोग नहीं मिला
+No matching fertilizers found|कोई मिलता-जुलता उर्वरक नहीं मिला
+Selected Crops|चयनित फसलें
+Total Land|कुल भूमि
+Total Budget|कुल बजट
+Total Water|कुल पानी
+Total Allocated|कुल आवंटित
+Unmet Demand|अपूर्ण मांग
+All demands satisfied|सभी मांगें पूरी हुईं
+Matched Symptoms|मिलान किए गए लक्षण
+Possible Diseases|संभावित रोग
+About|के बारे में
+Home|होम
+Welcome, Farmer!|स्वागत है, किसान!
+Back|वापस
+Submit|जमा करें
+Soil|मिट्टी
+Season|मौसम
+Supply|आपूर्ति
+Choose Image|छवि चुनें
+No image selected|कोई छवि चयनित नहीं
+Predicted Disease|अनुमानित रोग
+Feature unavailable|सुविधा उपलब्ध नहीं है
+Welcome to Farm Assist|फार्म असिस्ट में आपका स्वागत है
+Your intelligent companion for smarter farming decisions.|बेहतर खेती के फैसलों के लिए आपका बुद्धिमान साथी।
+What would you like to do today?|आज आप क्या करना चाहेंगे?
+Explore detailed information about various crops.|विभिन्न फसलों के बारे में विस्तृत जानकारी देखें।
+Learn about crop diseases, symptoms and management.|फसल रोगों, लक्षणों और प्रबंधन के बारे में जानें।
+Get information on fertilizers and their proper usage.|उर्वरकों और उनके सही उपयोग की जानकारी प्राप्त करें।
+Search diseases by symptoms and get best suggestions.|लक्षणों से रोग खोजें और सर्वोत्तम सुझाव पाएं।
+Get the best crop recommendation for your land, budget and water.|अपनी भूमि, बजट और पानी के लिए सर्वोत्तम फसल सिफारिश पाएं।
+Optimize fertilizer allocation for better yield.|बेहतर उपज के लिए उर्वरक आवंटन को अनुकूलित करें।
+Identify diseases from a crop leaf photo.|फसल की पत्ती की फोटो से रोगों की पहचान करें।
+Know more about Farm Assist and how it works.|फार्म असिस्ट और यह कैसे काम करता है, इसके बारे में और जानें।
+Confidence|विश्वास स्तर
+Detecting...|पहचान की जा रही है...
+Explore crop details and growing conditions.|फसल विवरण और उगाने की स्थितियां देखें।
+Learn symptoms and treatment for crop diseases.|फसल रोगों के लक्षण और उपचार जानें।
+Check fertilizer types and proper usage.|उर्वरक प्रकार और सही उपयोग जांचें।
+Search multiple symptoms for likely diseases.|कई लक्षणों से संभावित रोग खोजें।
+Get the best crop mix for your land and budget.|अपनी भूमि और बजट के लिए सर्वोत्तम फसल संयोजन पाएं।
+Optimize fertilizer supply across your crops.|अपनी फसलों में उर्वरक आपूर्ति को अनुकूलित करें।
+Identify diseases from a leaf photo instantly.|पत्ती की फोटो से तुरंत रोगों की पहचान करें।
+Learn how Farm Assist works.|जानें फार्म असिस्ट कैसे काम करता है।

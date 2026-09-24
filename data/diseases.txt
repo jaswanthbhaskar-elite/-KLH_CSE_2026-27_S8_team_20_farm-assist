@@ -1,0 +1,22 @@
+Leaf Blight|Yellow spots on leaves|Copper Fungicide
+Powdery Mildew|White powder on leaves|Sulfur Fungicide
+Root Rot|Root decay and wilting|Improve drainage
+Aphids|Small insects and curled leaves|Neem Oil
+Bacterial Wilt|Sudden wilting of whole plant|Remove infected plants
+Rust Fungus|Orange-brown pustules on leaf surface|Triazole Fungicide
+Downy Mildew|Yellow patches with fuzzy growth underneath|Metalaxyl Fungicide
+Early Blight|Dark concentric rings on lower leaves|Chlorothalonil Spray
+Late Blight|Water-soaked lesions turning brown rapidly|Copper Oxychloride
+Fusarium Wilt|Yellowing leaves and vascular browning|Crop rotation
+Anthracnose|Sunken dark lesions on fruit and leaves|Mancozeb Fungicide
+Leaf Spot|Small brown circular spots on leaves|Carbendazim Fungicide
+Stem Borer|Holes in stem with visible larvae|Chlorpyrifos Spray
+Whitefly Infestation|Tiny white insects under leaves|Imidacloprid Spray
+Mosaic Virus|Mottled yellow-green leaf pattern|Remove infected plants
+Smut Fungus|Black powdery spore masses on grain|Seed Treatment Fungicide
+Blast Disease|Diamond-shaped lesions on leaves|Tricyclazole Fungicide
+Collar Rot|Rotting at soil-stem junction|Improve drainage
+Scab Disease|Rough corky lesions on fruit skin|Sulfur Spray
+Nematode Infestation|Stunted growth and root galls|Nematicide Treatment
+Sooty Mould|Black sooty coating on leaves|Wash with mild soap solution
+Red Rot|Reddish discoloration inside stem|Resistant variety planting
