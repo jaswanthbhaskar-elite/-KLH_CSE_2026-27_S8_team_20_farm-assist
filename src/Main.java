@@ -2,9 +2,11 @@ import models.Crop;
 import models.Disease;
 import models.Fertilizer;
 import service.FarmAssistService;
+import service.FarmAssistService.CorpusSearchResult;
 import service.FarmAssistService.DiseaseMatch;
 import service.FarmAssistService.SymptomSearchResult;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -32,7 +34,8 @@ public class Main {
             System.out.println("4. Crop Recommendation");
             System.out.println("5. Fertilizer Allocation");
             System.out.println("6. Search Disease by Multiple Symptoms");
-            System.out.println("7. Exit");
+            System.out.println("7. Search Agricultural Corpus (KMP + Rabin-Karp + Aho-Corasick)");
+            System.out.println("8. Exit");
             System.out.print("Choose an option: ");
 
             String choice = scanner.nextLine().trim();
@@ -64,6 +67,10 @@ public class Main {
                     break;
 
                 case "7":
+                    runCorpusSearch(scanner, service);
+                    break;
+
+                case "8":
                     running = false;
                     System.out.println(
                             "Exiting Farm Assist. Goodbye!"
@@ -360,6 +367,66 @@ public class Main {
             String label = dm.matchCount == 1 ? "matching symptom" : "matching symptoms";
             System.out.println(rank + ". " + dm.diseaseName + " - " + dm.matchCount + " " + label);
             rank++;
+        }
+    }
+
+    // ==============================
+    // AGRICULTURAL CORPUS SEARCH — KMP + RABIN-KARP + AHO-CORASICK
+    // ==============================
+    //
+    // Runs the same, unmodified KMP / Rabin-Karp / Aho-Corasick
+    // implementations used elsewhere in the app, but over the larger
+    // agricultural corpus (data/agricultural_corpus.txt, loaded once at
+    // startup by io.CorpusLoader) instead of a single short record.
+
+    private static void runCorpusSearch(
+            Scanner scanner,
+            FarmAssistService service) {
+
+        System.out.print(
+                "Enter one or more search terms, comma-separated " +
+                "(e.g. nitrogen, drip irrigation, aphids): "
+        );
+        String input = scanner.nextLine().trim();
+
+        if (input.isEmpty()) {
+            System.out.println("No search term entered.");
+            return;
+        }
+
+        List<String> terms = Arrays.stream(input.split(","))
+                .map(String::trim)
+                .filter(t -> !t.isEmpty())
+                .toList();
+
+        // KMP + Rabin-Karp: run on each term individually so their
+        // results (which should always agree, since both are exact
+        // substring searches) can be compared side by side.
+        System.out.println("\n--- KMP / Rabin-Karp results (per term) ---");
+        for (String term : terms) {
+            CorpusSearchResult result = service.searchCorpus(term);
+            System.out.println(
+                    "\"" + term + "\": KMP found " + result.kmpPositions.size() +
+                    " occurrence(s), Rabin-Karp found " + result.rabinKarpPositions.size() +
+                    " occurrence(s) in the corpus."
+            );
+            if (!result.snippets.isEmpty()) {
+                System.out.println("  Sample context:");
+                result.snippets.forEach(s -> System.out.println("    " + s));
+            }
+        }
+
+        // Aho-Corasick: search for every term SIMULTANEOUSLY in one pass
+        // over the same corpus text, demonstrating the multi-pattern
+        // case Aho-Corasick is designed for.
+        List<String> foundTogether = service.searchCorpusMultiTerm(terms);
+        System.out.println(
+                "\n--- Aho-Corasick result (all terms in a single pass) ---"
+        );
+        if (foundTogether.isEmpty()) {
+            System.out.println("None of the given terms were found in the corpus.");
+        } else {
+            System.out.println("Found in one pass: " + String.join(", ", foundTogether));
         }
     }
 }

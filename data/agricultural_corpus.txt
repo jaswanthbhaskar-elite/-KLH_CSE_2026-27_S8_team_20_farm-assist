@@ -1,0 +1,170 @@
+AGRICULTURAL KNOWLEDGE CORPUS
+This corpus is a reference text used to demonstrate the Farm Assist string
+matching algorithms (KMP, Rabin-Karp, Aho-Corasick) on a realistic body of
+text, instead of only on short one-line records from the structured data
+files. Each section below covers a different agricultural topic.
+
+SECTION 1: MAJOR CROPS
+Rice is a staple cereal crop grown mainly during the Kharif season in
+clay and loamy soils that can hold standing water. It requires high
+water availability and performs best with transplanted seedlings in
+puddled fields. Wheat is a Rabi season crop that prefers loamy soil with
+medium water requirement and cool growing temperatures during grain
+filling. Maize is a versatile Kharif crop grown in loamy soil with
+medium water needs; it responds strongly to nitrogen and is often used
+both as a food grain and as fodder. Cotton is a long duration Kharif
+crop grown in black soil, valued for its fiber, and needs a warm growing
+season with well distributed but moderate rainfall. Groundnut grows well
+in sandy soil with low water requirement and is an important oilseed and
+nitrogen fixing legume crop. Sugarcane is a long duration crop that needs
+heavy irrigation, rich loamy soil, and warm humid conditions to build up
+sugar content in the stalk.
+
+SECTION 2: SOIL REQUIREMENTS
+Soil type strongly influences which crop will thrive. Clay soil retains
+water well and suits paddy rice cultivation but drains slowly, which can
+harm crops that need aerated roots. Loamy soil is a balanced mixture of
+sand, silt and clay, drains reasonably well while still retaining
+moisture and nutrients, and is considered ideal for wheat, maize and
+sugarcane. Sandy soil drains quickly and warms up fast in spring, which
+suits groundnut and other crops that dislike waterlogging, but it holds
+fewer nutrients and needs more frequent fertilizer application. Black
+soil, also called regur soil, is rich in clay and retains moisture for
+long periods, making it well suited to cotton cultivation in low
+rainfall regions. Soil pH also matters: most crops prefer a near neutral
+pH between six and seven, while very acidic or very alkaline soil can
+lock up nutrients and stunt growth even when fertilizer is applied.
+
+SECTION 3: IRRIGATION METHODS
+Flood irrigation, where whole fields are submerged, is traditionally
+used for rice because standing water suppresses weeds and stabilizes
+soil temperature. Furrow irrigation channels water along small trenches
+between crop rows and is common for maize, cotton and sugarcane, using
+gravity to move water without wetting the entire field surface. Drip
+irrigation delivers water directly to the root zone through emitters and
+is highly water efficient, making it valuable for groundnut, cotton and
+horticultural crops grown in water scarce sandy soils. Sprinkler
+irrigation mimics rainfall over a wide area and suits wheat and other
+field crops on gently sloping land where furrows are impractical.
+Efficient irrigation scheduling, matched to each crop's growth stage,
+reduces water stress during flowering and grain filling, which are the
+periods most sensitive to drought.
+
+SECTION 4: NUTRIENTS AND FERTILIZERS
+Nitrogen is the nutrient most responsible for vegetative growth and leaf
+greenness; nitrogen deficiency shows up as yellowing of older leaves and
+stunted growth, and is commonly corrected with Urea. Phosphorus supports
+strong root development, flowering and seed formation; a phosphorus
+deficiency often appears as dark purplish leaves and delayed maturity,
+and is treated with DAP or SSP. Potassium improves overall plant vigor,
+disease resistance and water regulation within the plant; potassium
+deficiency shows as scorched or browning leaf edges and weak stems, and
+is corrected with MOP. Sulphur deficiency causes pale yellow young
+leaves and reduced oil content in oilseed crops such as groundnut, and
+is addressed using Ammonium Sulphate or SSP, both of which supply
+sulphur alongside nitrogen or phosphorus. Micronutrients such as zinc,
+boron and iron are needed only in small quantities but their absence can
+still sharply reduce yield: zinc deficiency causes small, narrow leaves
+in maize and rice, boron deficiency causes poor flower and pod set in
+groundnut, and iron deficiency causes yellowing between the veins of
+young leaves, especially in soils with high pH.
+
+SECTION 5: CROP-SPECIFIC FERTILIZER SCHEDULES
+Rice typically receives a split application of Urea, with roughly half
+applied at transplanting and the remainder split between tillering and
+panicle initiation, plus a basal dose of DAP for early root growth.
+Maize responds well to a basal dose of DAP and MOP followed by top
+dressed Urea at the knee-high and tasseling stages, since it has a high
+nitrogen demand during rapid vegetative growth. Wheat is usually given a
+basal dose of DAP at sowing followed by Urea top dressing at the first
+and second irrigation, timed to support tillering and grain filling.
+Cotton benefits from a basal application of SSP for phosphorus and
+sulphur together, with Urea applied in split doses through the
+vegetative and boll development stages. Groundnut, being a legume, needs
+comparatively little nitrogen but benefits from Ammonium Sulphate or SSP
+at sowing to supply phosphorus and sulphur for pod development, along
+with gypsum applied near flowering to support pod filling.
+
+SECTION 6: COMMON DISEASES AND THEIR SYMPTOMS
+Leaf Blight appears as yellow spots on leaves that gradually enlarge and
+merge, weakening the plant's photosynthesis, and is treated with a
+copper based fungicide. Powdery Mildew presents as a white powder
+coating on leaves and stems, thriving in humid conditions with poor air
+circulation, and is treated with a sulfur fungicide. Root Rot causes
+root decay and wilting because damaged roots cannot take up water, and
+the most effective response is improving field drainage rather than
+spraying, since the underlying problem is excess soil moisture. Aphids
+are small sap sucking insects that cause curling leaves and stunted
+shoots, and are controlled using neem oil, which disrupts their feeding
+and reproduction. Bacterial Wilt causes sudden wilting of the whole
+plant even when soil moisture is adequate, because bacteria block the
+plant's water conducting tissue, and infected plants should be removed
+promptly to prevent the disease from spreading to neighboring plants.
+Leaf Spot produces brown patches scattered across the leaf surface,
+reducing the leaf area available for photosynthesis and lowering overall
+yield if left untreated.
+
+SECTION 7: PESTS AND INTEGRATED PEST MANAGEMENT
+Aphids cluster on new shoots and the undersides of leaves, secreting
+honeydew that attracts sooty mold; neem oil sprays and encouraging
+natural predators such as ladybirds are commonly recommended controls.
+The stem borer tunnels into maize and rice stalks during the larval
+stage, causing dead hearts in young plants and empty panicles in
+mature rice, and is managed through resistant varieties and timely
+removal of stubble that harbors overwintering larvae. Whitefly feeds on
+cotton and vegetable crops, transmitting viral diseases while also
+weakening plants directly through sap removal, and is managed with
+yellow sticky traps alongside targeted insecticide use when populations
+exceed threshold levels. Nematodes are microscopic soil dwelling worms
+that damage root systems, reducing water and nutrient uptake in crops
+such as groundnut, and are managed through crop rotation with non host
+crops and, where available, resistant varieties. Integrated pest
+management combines these cultural, biological and chemical approaches
+so that no single tactic is relied upon exclusively, which also slows
+the development of pest resistance to any one treatment.
+
+SECTION 8: TREATMENTS AND FIELD PRACTICES
+Copper based fungicides act by disrupting fungal cell function on
+contact and are most effective when applied at the first sign of leaf
+spotting rather than after a disease has already spread widely. Sulfur
+fungicides work well against powdery mildew but should be avoided during
+very hot weather since sulfur can scorch leaves at high temperatures.
+Improving drainage, whether through raised beds or field channels,
+remains the most reliable long term treatment for root rot because it
+addresses the excess moisture that allows the causal fungi to thrive.
+Removing and destroying infected plant material promptly limits the
+spread of bacterial wilt and other systemic diseases, since leaving
+infected debris in the field allows the pathogen to persist between
+seasons. Crop rotation, alternating cereal crops with legumes such as
+groundnut, breaks the life cycle of many soil borne pests and diseases
+while also improving soil nitrogen through the legume's nitrogen fixing
+root nodules.
+
+SECTION 9: WATER MANAGEMENT AND CLIMATE
+Water stress during flowering and grain filling has a disproportionately
+large effect on final yield compared with stress at other growth
+stages, which is why irrigation scheduling often prioritizes these
+windows even when overall water is limited. Waterlogging, the opposite
+extreme, deprives roots of oxygen and encourages root rot, so fields
+prone to standing water benefit from drainage channels even in crops
+like rice that tolerate flooding during specific growth stages. Higher
+than normal temperatures during flowering can reduce pollen viability in
+crops such as maize and rice, leading to poor grain set even when water
+and nutrients are otherwise adequate. Mulching the soil surface with
+crop residue reduces evaporation, moderates soil temperature, and
+suppresses weed growth, which is particularly useful for water sensitive
+crops grown in sandy soil.
+
+SECTION 10: HARVEST AND POST HARVEST NOTES
+Rice is typically harvested when the grains have hardened and the straw
+has turned golden yellow, since delayed harvest increases losses from
+shattering and bird damage. Wheat is ready for harvest when the grain
+is hard and the straw is dry, usually confirmed by biting a sample grain
+to check that it no longer feels doughy. Maize cobs are left to dry in
+the field until the husks turn brown before harvest, which reduces
+storage moisture and lowers the risk of fungal growth in stored grain.
+Cotton is picked in multiple rounds as bolls open over several weeks
+rather than all at once, since bolls on the same plant mature at
+different times. Proper drying and storage after harvest, keeping grain
+moisture low and storage areas dry and pest free, prevents fungal
+spoilage and preserves seed viability for the following season.

@@ -6,6 +6,7 @@ import algorithms.search.AhoCorasick;
 import algorithms.search.FuzzyMatch;
 import algorithms.search.KMP;
 import algorithms.search.RabinKarp;
+import io.CorpusLoader;
 import io.DataLoader;
 import models.Crop;
 import models.Disease;
@@ -30,11 +31,23 @@ import java.util.Map;
  *   Multi-Symptom Disease Search  -> Aho-Corasick
  *   Crop Recommendation           -> 0/1 Knapsack Dynamic Programming
  *   Fertilizer Allocation         -> Edmonds-Karp Max Flow
+ *   Agricultural Corpus Search    -> KMP + Rabin-Karp (single term),
+ *                                    Aho-Corasick (multiple terms at once)
  *
  * All searches fall back to typo-tolerant Edit Distance matching
  * (FuzzyMatch) if the exact algorithm finds nothing.
+ *
+ * The searches above (crop/disease/fertilizer) all run over tiny,
+ * per-record strings (one crop's name + soil type + season, etc).
+ * Agricultural Corpus Search instead runs the SAME KMP, Rabin-Karp and
+ * Aho-Corasick implementations over a much larger block of text loaded
+ * by io.CorpusLoader from data/agricultural_corpus.txt, so the
+ * algorithms can be demonstrated on a realistic amount of data.
  */
 public class FarmAssistService {
+
+    /** Default location of the larger text corpus (see io.CorpusLoader). */
+    private static final String DEFAULT_CORPUS_FILE = "data/agricultural_corpus.txt";
 
     private final List<Crop> crops;
     private final List<Disease> diseases;
@@ -43,8 +56,17 @@ public class FarmAssistService {
     private final List<Symptom> symptoms;
     private final AhoCorasick symptomMatcher;
 
+    // The larger agricultural corpus, loaded once at startup by CorpusLoader.
+    private final List<String> corpusLines;
+    private final String corpusText;
+
     public FarmAssistService(String cropsFile, String diseasesFile, String fertilizersFile,
                               String requirementsFile, String symptomsFile) {
+        this(cropsFile, diseasesFile, fertilizersFile, requirementsFile, symptomsFile, DEFAULT_CORPUS_FILE);
+    }
+
+    public FarmAssistService(String cropsFile, String diseasesFile, String fertilizersFile,
+                              String requirementsFile, String symptomsFile, String corpusFile) {
         this.crops = DataLoader.loadCrops(cropsFile);
         this.diseases = DataLoader.loadDiseases(diseasesFile);
         this.fertilizers = DataLoader.loadFertilizers(fertilizersFile);
@@ -59,6 +81,12 @@ public class FarmAssistService {
             symptomMatcher.addPattern(s.getPhrase().toLowerCase());
         }
         symptomMatcher.build();
+
+        // Load the larger agricultural corpus once at startup, via
+        // CorpusLoader, so it is ready for searchCorpus()/
+        // searchCorpusMultiTerm() without re-reading the file per query.
+        this.corpusLines = CorpusLoader.loadCorpusLines(corpusFile);
+        this.corpusText = CorpusLoader.loadCorpusText(corpusFile);
     }
 
     // ---------- Crop Information Search (KMP, fixed) ----------
@@ -183,6 +211,79 @@ public class FarmAssistService {
         return EdmondsKarp.allocate(fertilizers, requirements);
     }
 
+    // ---------- Agricultural Corpus Search (KMP + Rabin-Karp + Aho-Corasick demo) ----------
+
+    /**
+     * Result of searching the larger agricultural corpus for a single
+     * term. Both KMP and Rabin-Karp are run over the SAME corpus text
+     * on purpose, so their match positions can be compared directly —
+     * both are correct exact-substring algorithms, so they should
+     * always report the same positions, just by different routes
+     * (LPS-table skipping vs. rolling hash + verification).
+     */
+    public static class CorpusSearchResult {
+        public final String term;
+        public final List<Integer> kmpPositions;
+        public final List<Integer> rabinKarpPositions;
+        public final List<String> snippets;
+
+        public CorpusSearchResult(String term, List<Integer> kmpPositions,
+                                   List<Integer> rabinKarpPositions, List<String> snippets) {
+            this.term = term;
+            this.kmpPositions = kmpPositions;
+            this.rabinKarpPositions = rabinKarpPositions;
+            this.snippets = snippets;
+        }
+    }
+
+    /**
+     * Searches the full agricultural corpus (loaded by CorpusLoader)
+     * for one term, using the EXISTING KMP and Rabin-Karp
+     * implementations — unmodified — over a much larger amount of text
+     * than searchCrops()/searchDiseases() ever run them on.
+     */
+    public CorpusSearchResult searchCorpus(String term) {
+        if (term == null || term.isBlank()) {
+            return new CorpusSearchResult(term, new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+        }
+        List<Integer> kmpPositions = KMP.search(corpusText, term);
+        List<Integer> rabinKarpPositions = RabinKarp.search(corpusText, term);
+        List<String> snippets = extractSnippets(kmpPositions, term);
+        return new CorpusSearchResult(term, kmpPositions, rabinKarpPositions, snippets);
+    }
+
+    /**
+     * Searches the full agricultural corpus for several terms
+     * SIMULTANEOUSLY in one pass, using the EXISTING Aho-Corasick
+     * implementation — the same multi-pattern use case it already
+     * serves for symptomMatcher, applied here to the larger corpus
+     * instead of the short list of known symptom phrases.
+     */
+    public List<String> searchCorpusMultiTerm(List<String> terms) {
+        AhoCorasick corpusMatcher = new AhoCorasick();
+        for (String term : terms) {
+            if (term != null && !term.isBlank()) {
+                corpusMatcher.addPattern(term.trim().toLowerCase());
+            }
+        }
+        corpusMatcher.build();
+        return corpusMatcher.search(corpusText);
+    }
+
+    /** Builds a short line of context around each match position, for display. */
+    private List<String> extractSnippets(List<Integer> positions, String term) {
+        List<String> snippets = new ArrayList<>();
+        int radius = 40;
+        for (int pos : positions) {
+            int start = Math.max(0, pos - radius);
+            int end = Math.min(corpusText.length(), pos + term.length() + radius);
+            String snippet = corpusText.substring(start, end).replace("\n", " ").trim();
+            snippets.add("..." + snippet + "...");
+            if (snippets.size() >= 5) break; // keep demo output readable
+        }
+        return snippets;
+    }
+
     // ---------- Getters ----------
 
     public List<Crop> getCrops() { return crops; }
@@ -190,4 +291,6 @@ public class FarmAssistService {
     public List<Fertilizer> getFertilizers() { return fertilizers; }
     public List<Requirement> getRequirements() { return requirements; }
     public List<Symptom> getSymptoms() { return symptoms; }
+    public List<String> getCorpusLines() { return corpusLines; }
+    public String getCorpusText() { return corpusText; }
 }
