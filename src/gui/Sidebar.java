@@ -71,6 +71,7 @@ public class Sidebar extends JPanel implements Localizable {
         addNavItem(navPanel, IconPainter.Kind.BUG, "Disease Information", MainFrame.DISEASE_SEARCH);
         addNavItem(navPanel, IconPainter.Kind.BAG, "Fertilizer Information", MainFrame.FERTILIZER_SEARCH);
         addNavItem(navPanel, IconPainter.Kind.SEARCH, "Search by Multiple Symptoms", MainFrame.SYMPTOM_SEARCH);
+        addNavItem(navPanel, IconPainter.Kind.SEARCH, "Search Agricultural Corpus", MainFrame.CORPUS_SEARCH);
         addNavItem(navPanel, IconPainter.Kind.CHART, "Crop Recommendation", MainFrame.CROP_RECOMMEND);
         addNavItem(navPanel, IconPainter.Kind.DROPLET, "Fertilizer Allocation", MainFrame.FERTILIZER_ALLOCATION);
         addNavItem(navPanel, IconPainter.Kind.CAMERA, "Identify Disease from Photo", MainFrame.PHOTO_DISEASE);

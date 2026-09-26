@@ -23,6 +23,7 @@ public class MainFrame extends JFrame {
     public static final String DISEASE_SEARCH = "DISEASE_SEARCH";
     public static final String FERTILIZER_SEARCH = "FERTILIZER_SEARCH";
     public static final String SYMPTOM_SEARCH = "SYMPTOM_SEARCH";
+    public static final String CORPUS_SEARCH = "CORPUS_SEARCH";
     public static final String CROP_RECOMMEND = "CROP_RECOMMEND";
     public static final String FERTILIZER_ALLOCATION = "FERTILIZER_ALLOCATION";
     public static final String PHOTO_DISEASE = "PHOTO_DISEASE";
@@ -64,6 +65,7 @@ public class MainFrame extends JFrame {
         DiseaseSearchPanel diseaseSearch = new DiseaseSearchPanel(service, translation, this);
         FertilizerSearchPanel fertilizerSearch = new FertilizerSearchPanel(service, translation, this);
         SymptomSearchPanel symptomSearch = new SymptomSearchPanel(service, translation, this);
+        CorpusSearchPanel corpusSearch = new CorpusSearchPanel(service, translation, this);
         CropRecommendationPanel cropRecommend = new CropRecommendationPanel(service, translation, this);
         FertilizerAllocationPanel fertilizerAllocation = new FertilizerAllocationPanel(service, translation, this);
         PhotoDiseasePanel photoDisease = new PhotoDiseasePanel(service, translation, classifier, this);
@@ -74,6 +76,7 @@ public class MainFrame extends JFrame {
         register(DISEASE_SEARCH, diseaseSearch);
         register(FERTILIZER_SEARCH, fertilizerSearch);
         register(SYMPTOM_SEARCH, symptomSearch);
+        register(CORPUS_SEARCH, corpusSearch);
         register(CROP_RECOMMEND, cropRecommend);
         register(FERTILIZER_ALLOCATION, fertilizerAllocation);
         register(PHOTO_DISEASE, photoDisease);
