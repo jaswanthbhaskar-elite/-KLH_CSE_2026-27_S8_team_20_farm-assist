@@ -46,4 +46,137 @@ Farm Assist is a Java-based agricultural assistance system designed to help user
 | Dynamic Programming — Knapsack | Crop selection under resource constraints |
 | Edmonds–Karp | Maximum-flow-based resource allocation |
 | Greedy Set Cover | Selecting items that cover relevant symptoms |
-| MobileNet
+| MobileNetV2 | Machine-learning-based image classification |
+
+## 🏗️ System Architecture
+
+The application is organized into layers to separate the user interface, business logic, data handling, algorithms, and image processing.
+
+1. **GUI Layer:** Accepts user input and displays results through Java Swing.
+2. **Service Layer:** Coordinates application features and connects the interface to the relevant components.
+3. **Algorithm Layer:** Implements string searching, crop optimization, resource allocation, and coverage algorithms.
+4. **Data and I/O Layer:** Loads structured agricultural data and the larger text corpus.
+5. **Vision Layer:** Performs image-based disease classification using the ONNX model and ONNX Runtime.
+
+### Application Flow
+
+```text
+User
+  |
+  v
+Java Swing GUI
+  |
+  v
+FarmAssistService
+  |
+  +----> DataLoader / CorpusLoader
+  |
+  +----> DSA Algorithms
+  |
+  +----> Vision / ONNX Runtime
+  |
+  v
+Results displayed to the user
+```
+
+## 📁 Project Structure
+
+```text
+Farm-assist/
+├── src/
+│   ├── algorithms/
+│   │   ├── flow/
+│   │   ├── recommend/
+│   │   ├── search/
+│   │   └── setcover/
+│   ├── gui/
+│   ├── io/
+│   ├── models/
+│   ├── service/
+│   ├── vision/
+│   ├── Main.java
+│   └── GuiMain.java
+├── data/
+│   ├── crops.txt
+│   ├── diseases.txt
+│   ├── fertilizers.txt
+│   ├── requirements.txt
+│   ├── symptoms.txt
+│   ├── agricultural_corpus.txt
+│   ├── model_class_to_disease.txt
+│   ├── translations_hi.txt
+│   └── translations_te.txt
+├── model/
+│   ├── config.json
+│   └── labels.txt
+├── lib/
+├── assets/
+├── tools/
+├── src-optional/
+├── README.md
+└── Farm_Assist_Project_Documentation.docx
+```
+
+*Note: The tree highlights the main project components; additional files may be present in the repository.*
+
+## ▶️ Running the Project
+
+### Prerequisites
+
+- Java Development Kit (JDK) compatible with the project's source code.
+- A Java IDE such as Visual Studio Code, or a terminal with Java compiler tools.
+- The project dependencies and files included in the repository.
+
+### Run Using an IDE
+
+1. Clone or download this repository.
+2. Open the project root folder in your IDE.
+3. Ensure the required library dependencies are available.
+4. Run `GuiMain.java` to launch the graphical application.
+5. Run `Main.java` to use the console-based application, including the console agricultural corpus search option.
+
+### Image Classification Requirements
+
+The image-classification feature uses the ONNX model and ONNX Runtime library included in the project. Ensure the model and library paths are configured correctly before running this feature.
+
+## 🔎 Agricultural Corpus Search
+
+The project includes a larger agricultural text dataset in `data/agricultural_corpus.txt`. `CorpusLoader` reads this plain-text corpus and makes it available to the search functionality.
+
+The corpus search demonstrates:
+
+- KMP and Rabin–Karp for single-pattern searching.
+- Aho–Corasick for multi-pattern searching.
+- Occurrence counts and contextual snippets to help users understand the results.
+
+For example, searching for `nitrogen` returns matches found in the agricultural corpus.
+
+## 👥 Project Team
+
+| Roll Number | Team Member |
+|---|---|
+| 2520030553-B | Jaswanth Bhaskar |
+| 2520030503-V | V Deepak |
+
+## 🚀 Future Scope
+
+- Integrate updated agricultural datasets and region-specific crop recommendations.
+- Improve disease identification through further model evaluation and testing.
+- Expand language support and accessibility.
+- Add weather and soil-condition data integrations.
+- Develop additional decision-support features for farmers.
+
+## 📌 Conclusion
+
+Farm Assist demonstrates how Java, Data Structures and Algorithms, file-based datasets, a graphical interface, and machine-learning-based image classification can be combined into an agricultural decision-support application. The project provides a practical setting for applying searching, optimization, graph, and coverage algorithms to agricultural information and resource-management problems.
+
+## 📄 Project Documentation
+
+The project report and presentation are available in this repository. Refer to the project documentation for further details about the implementation, design, and evaluation.
+
+---
+
+**Project:** Farm Assist  
+**Domain:** Agriculture and Decision Support  
+**Language:** Java  
+**Repository:** [Farm Assist on GitHub](https://github.com/jaswanthbhaskar-elite/-KLH_CSE_2026-27_S8_team_20_farm-assist.git)
