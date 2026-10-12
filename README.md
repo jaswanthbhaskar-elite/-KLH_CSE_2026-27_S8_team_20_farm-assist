@@ -45,7 +45,6 @@ Farm Assist is a Java-based agricultural assistance system designed to help user
 | Fuzzy Matching / Levenshtein Distance | Approximate text matching |
 | Dynamic Programming — Knapsack | Crop selection under resource constraints |
 | Edmonds–Karp | Maximum-flow-based resource allocation |
-| Greedy Set Cover | Selecting items that cover relevant symptoms |
 | MobileNetV2 | Machine-learning-based image classification |
 
 ## 🏗️ System Architecture
